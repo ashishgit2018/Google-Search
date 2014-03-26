@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35605" started-at="2014-03-26T13:18:43Z" finished-at="2014-03-26T13:19:18Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35605" started-at="2014-03-26T13:18:43Z" finished-at="2014-03-26T13:19:18Z">
+      <class name="com.viacom.SearchGooglePage">
+        <test-method status="PASS" signature="navigateToGoogleLinkTest()[pri:0, instance:com.viacom.SearchGooglePage@3dad65]" name="navigateToGoogleLinkTest" is-config="true" duration-ms="4350" started-at="2014-03-26T18:48:43Z" finished-at="2014-03-26T18:48:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToGoogleLinkTest -->
+        <test-method status="PASS" signature="googleSearchTest()[pri:0, instance:com.viacom.SearchGooglePage@3dad65]" name="googleSearchTest" duration-ms="30208" started-at="2014-03-26T18:48:47Z" finished-at="2014-03-26T18:49:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearchTest -->
+        <test-method status="PASS" signature="closeDriverTest()[pri:0, instance:com.viacom.SearchGooglePage@3dad65]" name="closeDriverTest" is-config="true" duration-ms="1038" started-at="2014-03-26T18:49:17Z" finished-at="2014-03-26T18:49:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriverTest -->
+      </class> <!-- com.viacom.SearchGooglePage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
