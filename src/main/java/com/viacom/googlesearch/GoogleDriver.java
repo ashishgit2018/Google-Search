@@ -61,12 +61,12 @@ public class GoogleDriver {
              break;
              
         	case GOOGLECHROME:
-        		System.setProperty("webdriver.chrome.driver", "D://Drivers//chromedriver.exe");
+        		System.setProperty("webdriver.chrome.driver", ".//Drivers//chromedriver.exe");
         		adriver=new ChromeDriver();
         		break;
         		
         	case IE:
-        		System.setProperty("webdriver.ie.driver","D://Drivers//IEDriverServer.exe");
+        		System.setProperty("webdriver.ie.driver",".//Drivers//IEDriverServer.exe");
         		adriver=new InternetExplorerDriver();
         		break;
         		
