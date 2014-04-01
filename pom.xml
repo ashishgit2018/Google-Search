@@ -23,7 +23,22 @@
 		<dependency>
             <groupId>com.opera</groupId>
             <artifactId>operadriver</artifactId>
-            <version>1.3</version>
+            <version>1.5</version>
+        </dependency>
+         <dependency>
+  		  <groupId>com.github.detro.ghostdriver</groupId>
+  		  <artifactId>phantomjsdriver</artifactId>
+    	  <version>1.0.4</version>
+    	  <exclusions>
+				<exclusion>
+					<artifactId>selenium-api</artifactId>
+					<groupId>org.seleniumhq.selenium</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>selenium-remote-driver</artifactId>
+					<groupId>org.seleniumhq.selenium</groupId>
+				</exclusion>
+			</exclusions>
         </dependency>
 </dependencies>
 </project>

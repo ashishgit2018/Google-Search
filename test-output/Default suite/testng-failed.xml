@@ -5,6 +5,7 @@
     <classes>
       <class name="com.viacom.SearchGooglePage">
         <methods>
+          <include name="closeDriverTest"/>
           <include name="googleSearchTest"/>
           <include name="navigateToGoogleLinkTest"/>
         </methods>
