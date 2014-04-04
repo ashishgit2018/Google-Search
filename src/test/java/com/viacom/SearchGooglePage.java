@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import com.viacom.PageClasses.GotoAnySearchLink;
 import com.viacom.PageClasses.GotoSerachPage;
 import com.viacom.PageClasses.HomePageObject;
@@ -29,7 +30,6 @@ public class SearchGooglePage {
 	public void googleSearchTest(){
 		
 		Assert.assertEquals(newPage.titleOfPage(), "Google");
-
 		pageAfterClick=newPage.enterSerachTermAndClick(SEARCH_STRING);
 		Assert.assertEquals(newPage.titleOfPage(),SEARCH_STRING+" - Google Search");
 

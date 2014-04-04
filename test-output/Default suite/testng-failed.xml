@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.viacom.SearchGooglePage">
+      <class name="com.viacom.SpiceJet">
         <methods>
-          <include name="closeDriverTest"/>
-          <include name="googleSearchTest"/>
-          <include name="navigateToGoogleLinkTest"/>
+          <include name="getUrl"/>
         </methods>
-      </class> <!-- com.viacom.SearchGooglePage -->
+      </class> <!-- com.viacom.SpiceJet -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

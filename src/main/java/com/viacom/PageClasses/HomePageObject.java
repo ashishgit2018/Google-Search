@@ -2,11 +2,11 @@
 //the insert search term operations and clicking submit button
 
 package com.viacom.PageClasses;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.viacom.googlesearch.GoogleDriver;
 
@@ -20,7 +20,8 @@ public class HomePageObject {
 	public void getPage(String url){
 		//open page using customized browser
 		driver=GoogleDriver.get(url);
-		new WebDriverWait(driver,10).until(ExpectedConditions.titleIs("Google"));
+  	  	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+  	   	  
 	}
 	public String titleOfPage(){
 		return driver.getTitle();

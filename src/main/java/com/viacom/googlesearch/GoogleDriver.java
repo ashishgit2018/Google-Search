@@ -14,6 +14,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.opera.core.systems.OperaDriver;
 
@@ -21,16 +22,15 @@ public class GoogleDriver {
 
 	private static BrowserName useThisDriver;
 	//Any of the browsers can be used.currently working to incorporate Sauce labs also
-	private enum BrowserName{FIREFOX, GOOGLECHROME, OPERA, IE, HTMLUNIT, GHOST}
+	private enum BrowserName{FIREFOX, GOOGLECHROME, OPERA, IE, HTMLUNIT, GHOST, SAUCELABS}
 	private static WebDriver adriver=null;
 	private static String defaultBrowser=null;
-	//private static final File PHANTOM_EXE=new File(System.getProperty("D://Drivers//phantomjs-1.9.7-windows//phantomjs.exe"));
 	private static DesiredCapabilities dcaps=null;
 
 	 public static WebDriver get(String url) {
 		
 		//Change the value to use any other browser from the list
-		defaultBrowser = "GHOST"; 
+		defaultBrowser = "CHROME"; 
         switch (defaultBrowser){
         
             case "FIREFOX":
@@ -55,6 +55,10 @@ public class GoogleDriver {
                 
             case "GHOST":
                 useThisDriver = BrowserName.GHOST;
+                break;
+                
+            case "SAUCE":
+                useThisDriver = BrowserName.SAUCELABS;
                 break;
                 
             default:
@@ -86,6 +90,13 @@ public class GoogleDriver {
         		
         	case HTMLUNIT:
         		adriver=new HtmlUnitDriver();
+        		break;
+        		
+        	case SAUCELABS:
+        		DesiredCapabilities caps = DesiredCapabilities.firefox();
+        		caps.setCapability("platform", "Windows 7");
+        		caps.setCapability("version", "28");
+        		adriver=new RemoteWebDriver(caps);
         		break;
         		
         	case GHOST:

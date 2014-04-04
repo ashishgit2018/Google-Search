@@ -12,7 +12,7 @@ public class GotoAnySearchLink {
 	
 	public GotoAnySearchLink(WebDriver driver){
 		this.driver=driver;
-		new WebDriverWait(driver,10).until(ExpectedConditions.presenceOfElementLocated(By.tagName("body")));
+		new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOfElementLocated(By.tagName("body")));
 	
 	}
 	

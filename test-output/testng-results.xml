@@ -2,36 +2,34 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5990" started-at="2014-03-31T12:35:28Z" finished-at="2014-03-31T12:35:34Z">
+  <suite name="Default suite" duration-ms="112839" started-at="2014-04-01T09:36:12Z" finished-at="2014-04-01T09:38:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5990" started-at="2014-03-31T12:35:28Z" finished-at="2014-03-31T12:35:34Z">
-      <class name="com.viacom.SearchGooglePage">
-        <test-method status="PASS" signature="navigateToGoogleLinkTest()[pri:0, instance:com.viacom.SearchGooglePage@1628381]" name="navigateToGoogleLinkTest" is-config="true" duration-ms="4528" started-at="2014-03-31T18:05:28Z" finished-at="2014-03-31T18:05:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToGoogleLinkTest -->
-        <test-method status="FAIL" signature="googleSearchTest()[pri:0, instance:com.viacom.SearchGooglePage@1628381]" name="googleSearchTest" duration-ms="388" started-at="2014-03-31T18:05:33Z" finished-at="2014-03-31T18:05:33Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+    <test name="Default test" duration-ms="112839" started-at="2014-04-01T09:36:12Z" finished-at="2014-04-01T09:38:05Z">
+      <class name="com.viacom.SpiceJet">
+        <test-method status="FAIL" signature="getUrl()[pri:0, instance:com.viacom.SpiceJet@1d2052b]" name="getUrl" duration-ms="112821" started-at="2014-04-01T15:06:12Z" finished-at="2014-04-01T15:08:05Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[{"errorMessage":"Unable to find element with id 'gbqfq'","request":{"headers":{"Accept":"application/json, image/png","Connection":"Keep-Alive","Content-Length":"30","Content-Type":"application/json; charset=utf-8","Host":"localhost:44058"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"id\",\"value\":\"gbqfq\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/f1ba17a0-b8d0-11e3-865c-651b311801f5/element"}}
-Command duration or timeout: 373 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[chrome not reachable
+  (Session info: chrome=33.0.1750.154)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.00 seconds
 Build info: version: '2.40.0', revision: '4c5c0568b004f67810ee41c459549aa4b09c651e', time: '2014-02-19 11:13:01'
 System info: host: 'INFAR20720', ip: '192.168.1.6', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_51'
-Session ID: f1ba17a0-b8d0-11e3-865c-651b311801f5
-Driver info: org.openqa.selenium.phantomjs.PhantomJSDriver
-Capabilities [{platform=XP, acceptSslCerts=false, javascriptEnabled=true, browserName=phantomjs, rotatable=false, driverVersion=1.1.0, locationContextEnabled=false, version=1.9.7, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=false, browserConnectionEnabled=false, webStorageEnabled=false, nativeEvents=true, proxy={proxyType=direct}, applicationCacheEnabled=false, driverName=ghostdriver, takesScreenshot=true}]]]>
+Session ID: ccda6231018914608a340c184439f5aa
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\299210\AppData\Local\Temp\scoped_dir7980_5063}, rotatable=false, locationContextEnabled=true, version=33.0.1750.154, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with id 'gbqfq'","request":{"headers":{"Accept":"application/json, image/png","Connection":"Keep-Alive","Content-Length":"30","Content-Type":"application/json; charset=utf-8","Host":"localhost:44058"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"id\",\"value\":\"gbqfq\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/f1ba17a0-b8d0-11e3-865c-651b311801f5/element"}}
-Command duration or timeout: 373 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=33.0.1750.154)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.00 seconds
 Build info: version: '2.40.0', revision: '4c5c0568b004f67810ee41c459549aa4b09c651e', time: '2014-02-19 11:13:01'
 System info: host: 'INFAR20720', ip: '192.168.1.6', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_51'
-Session ID: f1ba17a0-b8d0-11e3-865c-651b311801f5
-Driver info: org.openqa.selenium.phantomjs.PhantomJSDriver
-Capabilities [{platform=XP, acceptSslCerts=false, javascriptEnabled=true, browserName=phantomjs, rotatable=false, driverVersion=1.1.0, locationContextEnabled=false, version=1.9.7, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=false, browserConnectionEnabled=false, webStorageEnabled=false, nativeEvents=true, proxy={proxyType=direct}, applicationCacheEnabled=false, driverName=ghostdriver, takesScreenshot=true}]
+Session ID: ccda6231018914608a340c184439f5aa
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\299210\AppData\Local\Temp\scoped_dir7980_5063}, rotatable=false, locationContextEnabled=true, version=33.0.1750.154, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -39,13 +37,9 @@ Capabilities [{platform=XP, acceptSslCerts=false, javascriptEnabled=true, browse
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:326)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:367)
-	at org.openqa.selenium.By$ById.findElement(By.java:214)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:318)
-	at com.viacom.PageClasses.HomePageObject.enterSerachContent(HomePageObject.java:30)
-	at com.viacom.PageClasses.HomePageObject.enterSerachTermAndClick(HomePageObject.java:41)
-	at com.viacom.SearchGooglePage.googleSearchTest(SearchGooglePage.java:33)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:293)
+	at com.viacom.SpiceJet.getUrl(SpiceJet.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -70,27 +64,13 @@ Capabilities [{platform=XP, acceptSslCerts=false, javascriptEnabled=true, browse
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
-Build info: version: '2.40.0', revision: '4c5c0568b004f67810ee41c459549aa4b09c651e', time: '2014-02-19 11:13:01'
-System info: host: 'INFAR20720', ip: '192.168.1.6', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_51'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:125)
-	... 32 more
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: {"errorMessage":"Unable to find element with id 'gbqfq'","request":{"headers":{"Accept":"application/json, image/png","Connection":"Keep-Alive","Content-Length":"30","Content-Type":"application/json; charset=utf-8","Host":"localhost:44058"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"id\",\"value\":\"gbqfq\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/f1ba17a0-b8d0-11e3-865c-651b311801f5/element"}}
-Build info: version: '2.40.0', revision: '4c5c0568b004f67810ee41c459549aa4b09c651e', time: '2014-02-19 11:13:01'
-System info: host: 'INFAR20720', ip: '192.168.1.6', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_51'
-Driver info: driver.version: unknown
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- googleSearchTest -->
-        <test-method status="PASS" signature="closeDriverTest()[pri:0, instance:com.viacom.SearchGooglePage@1628381]" name="closeDriverTest" is-config="true" duration-ms="1061" started-at="2014-03-31T18:05:33Z" finished-at="2014-03-31T18:05:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriverTest -->
-      </class> <!-- com.viacom.SearchGooglePage -->
+        </test-method> <!-- getUrl -->
+      </class> <!-- com.viacom.SpiceJet -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
